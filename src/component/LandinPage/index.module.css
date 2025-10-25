@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #0C0C0C;
+  transition: 0.5s ease-in-out;
+}
+
+.header > div {
+  border-radius: 30px;
+  background: #1F1F1FEB;
+}
+
+.header .navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar-nav .nav-link {
+  color: #FCFCD8;
+  font-size: 15px;
+  font-weight: 600;
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
+}
+
+.header .btn {
+  color: #FCFCD8;
+  font-size: 15px;
+  font-weight: 600;
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
+  /* background: linear-gradient(93.56deg, #e1ff26 2.64%, #f5e9d2 129.06%); */
+}
+
+.position {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+.topAffix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(31px);
+  z-index: 9;
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+ 
+  .navbar-nav li a {
+    font-size: 15px !important;
+    padding-right: 13px !important;
+    padding-left: 13px !important;
+  }
+
+  .navbar-nav li button {
+    font-size: 16px;
+    width: 140px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .header .navbar {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    grid-column-gap: 1.5rem;
+ }
+}
+@media (min-width: 992px) {
+  .header .navbar .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+ }
+
+ .affix {
+  background: none !important;
+}
+
+.affix > div {
+  border-radius: 56px;
+  background: #30303066 !important;
+  backdrop-filter: blur(31px);
+  -webkit-backdrop-filter: blur(31px);
+}
+}
+@media (max-width: 991px) {
+  .header .navbar .navbar-collapse {
+    padding-top: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: #E1FF26;
+    z-index: 9999;
+    transform: translate(-102%);
+    transition: 0.5s ease-in-out;
+ }
+  .header .navbar .navbar-collapse.show {
+    transform: translate(0);
+ }
+}
+.header .navbar-nav {
+  list-style: none;
+  padding-left: 0;
+}
+@media (max-width: 991px) {
+  .header .navbar-nav > li {
+    margin-bottom: 1rem;
+ }
+
+ .header .navbar-nav .nav-link {
+  color: #000;
+}
+}
