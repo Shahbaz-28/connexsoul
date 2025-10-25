@@ -54,7 +54,7 @@ const Banner = () => {
             transition={{ duration: 0.8 }}
             className="!max-w-[900px] mx-auto">
               <h2
-                className="f-Nohemi-Light-BF6438cc583f70b text-[50px] sm:text-[56px] md:text-[72px] lg:text-[96px] leading-[44px] sm:leading-[60px] md:leading-[76px] lg:leading-[96px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FCFCD8] via-[#FCFCD8] to-[#7d22ff]">
+                className="f-Nohemi-Light-BF6438cc583f70b mt-10 text-[50px] sm:text-[56px] md:text-[72px] lg:text-[96px] leading-[44px] sm:leading-[60px] md:leading-[76px] lg:leading-[96px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FCFCD8] via-[#FCFCD8] to-[#7d22ff]">
                 ConnexSoul
               </h2>
               <p className="f-Nohemi-Light-BF6438cc583f70b text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-[#FCFCD880] text-center leading-[22px] sm:leading-[26px] md:leading-relaxed pt-3 md:pt-4 max-w-[80%] sm:max-w-[600px] mx-auto">
@@ -66,7 +66,7 @@ const Banner = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col md:flex-row items-center justify-center gap-3 pt-12 md:pt-10 lg:pt-16">
+            className="flex flex-col md:flex-row items-center justify-center gap-3 pt-4 md:pt-10 lg:pt-6">
           <RainbowButton 
             onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdE01Y7UmyVvkv6FGWIVPg-6kMDb7ZBhoYWovE5ulcrF3kauw/viewform', '_blank')}
             className="f-Nohemi-Light-BF6438cc583f70b hover:border-gray-600 hover:border-[1px] hover:bg-[#1F1F1FEB] hover:text-[#FCFCD8] duration-300 rounded-[14px] text-[#0C0C0C] text-[15px] flex items-center justify-center px-6 pb-2 pt-3 border-[1px] border-[#FCFCD80F] cursor-pointer w-auto">
